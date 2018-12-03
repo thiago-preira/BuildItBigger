@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3688611183353098/7506961643</string>
+    <string name="instructions">Press the button for a delicious joke! FREE VERSION.</string>
+    <string name ="app_mob_id">ca-app-pub-3940256099942544~3347511713</string>
+</resources>
