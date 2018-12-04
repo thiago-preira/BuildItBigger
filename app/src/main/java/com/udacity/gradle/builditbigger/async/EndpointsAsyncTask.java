@@ -1,7 +1,10 @@
 package com.udacity.gradle.builditbigger.async;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.util.Pair;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -45,7 +48,8 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
         try {
             return sMyApi.getJoke().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            Log.e(TAG, "doInBackground: ", e);
+            return null;
         }
     }
 
